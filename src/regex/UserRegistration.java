@@ -14,9 +14,11 @@ public class UserRegistration {
 
         String fname_match = "[A-Z]{1}[a-zA-Z]{2,}";			//String pattern to be detected
         String lname_match = fname_match;
+        String email_match = "^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*@([0-9a-zA-Z][-]?)+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?$";
 
         String firstname;
         String lastname;
+        String email;
 
 
 
@@ -48,9 +50,22 @@ public class UserRegistration {
                 System.out.println("Incorrect format. Please try again.");
                 System.out.println();
             }
+        } while (true) {
+            //Entering email
+            System.out.print("Please enter your Email ID: ");
+            email = sc.nextLine();
+
+            boolean check = email.matches(email_match);                            //Condition check
+            if (check) {
+                break;
+            } else {
+                System.out.println("Incorrect format. Please try again.");
+                System.out.println();
+            }
         }
 
         System.out.println("Welcome "+firstname+" "+lastname);
+        System.out.println("You Email ID is " + email);
 
     }
 }
