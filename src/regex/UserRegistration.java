@@ -13,9 +13,11 @@ public class UserRegistration {
         Scanner sc=new Scanner(System.in);
 
         String fname_match = "[A-Z]{1}[a-zA-Z]{2,}";			//String pattern to be detected
-
+        String lname_match = fname_match;
 
         String firstname;
+        String lastname;
+
 
 
         //Checking for matches
@@ -29,6 +31,20 @@ public class UserRegistration {
             if(check) {
                 break;
             }else{
+                System.out.println("Incorrect format. Please try again.");
+                System.out.println();
+            }
+        }
+
+        while (true) {
+            //Entering lastname
+            System.out.print("Please enter your Last Name: ");
+            lastname = sc.nextLine();
+
+            boolean check = lastname.matches(lname_match);                            //Condition check
+            if (check) {
+                break;
+            } else {
                 System.out.println("Incorrect format. Please try again.");
                 System.out.println();
             }
