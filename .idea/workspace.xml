@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04d1a879-1021-4c03-b065-1ed5ff9ccf5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/regex/RegexEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/regex/RegexPin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/regex/UserRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/regex/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/regex/UserRegistration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="UserRegistration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -71,5 +70,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
